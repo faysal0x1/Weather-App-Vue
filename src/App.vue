@@ -1,14 +1,15 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-
-</script>
-
 <template>
-  <div>
+  <div
+    class="flex flex-col md:max-w-full min-h-screen font-Roboto bg-weather-primary"
+  >
+    <SiteNavigation />
     <RouterView />
   </div>
 </template>
 
-<style scoped>
+<script setup>
+import { RouterView } from "vue-router";
+import SiteNavigation from "./components/SiteNavigation.vue";
+</script>
 
-</style>
+<style lang="scss" scoped></style>
